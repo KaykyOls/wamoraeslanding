@@ -1,16 +1,63 @@
-# React + Vite
+# W.A Moraes Peças e Acessórios Automotivos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing Page desenvolvida em React com Vite como parte do trabalho individual da Parte 2 de Front-End.
 
-Currently, two official plugins are available:
+## Autor
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Kayky de Oliveira Lopes da Silva**
 
-## React Compiler
+## Sobre o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto consiste na reconstrução do site da W.A Moraes Peças e Acessórios Automotivos utilizando React.
 
-## Expanding the ESLint configuration
+A proposta da Parte 2 foi transformar o conteúdo do `index.html` da Parte 1 e da página desenvolvida pelo aluno em uma única Landing Page, organizada em seções e com navegação por âncoras.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O projeto mantém a identidade visual original, utilizando as mesmas cores e o framework CSS utilizado na Parte 1.
+
+## Tecnologias utilizadas
+
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- Bootstrap
+- Bootstrap Icons
+
+## Funcionalidades
+
+- Landing Page com navegação por seções
+- Menu com âncoras
+- Seção de apresentação da empresa
+- Seção de diferenciais
+- Seção de produtos
+- Formulário de contato com validação
+- Máscara para telefone
+- Links para redes sociais
+- Layout responsivo para diferentes tamanhos de tela
+
+## Estrutura do projeto
+
+```text
+src/
+├── components/
+│   ├── Apresentacao.jsx
+│   ├── ContatoSection.jsx
+│   ├── Destaques.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── Navbar.jsx
+│   └── ProdutosSection.jsx
+│
+├── pages/
+│   └── LandingPage.jsx
+│
+├── App.jsx
+├── main.jsx
+├── index.css
+└── style.css
+
+public/
+└── imagens/
+
+referencia-html/
