@@ -8,7 +8,7 @@ function Hero() {
         melhor preço da região.
       </p>
 
-      <a href="/produtos" className="btn-amarelo">
+      <a href="#produtos" className="btn-amarelo">
         Ver Produtos
       </a>
     </section>
