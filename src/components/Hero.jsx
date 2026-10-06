@@ -7,10 +7,6 @@ function Hero() {
         Peças originais, acessórios e muito mais com qualidade garantida e o
         melhor preço da região.
       </p>
-
-      <a href="#produtos" className="btn-amarelo">
-        Ver Produtos
-      </a>
     </section>
   )
 }

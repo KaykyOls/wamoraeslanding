@@ -3,25 +3,25 @@ const categorias = [
     nome: 'Acessórios',
     descricao:
       'Acessórios para deixar seu veículo mais completo, confortável e personalizado.',
-    icone: '🚗',
+    icone: 'bi bi-car-front',
   },
   {
     nome: 'Freios',
     descricao:
       'Pastilhas, discos e outros componentes para garantir segurança e eficiência na frenagem.',
-    icone: '🛞',
+    icone: 'bi bi-disc',
   },
   {
     nome: 'Óleos',
     descricao:
       'Óleos e lubrificantes para manter o motor protegido e funcionando corretamente.',
-    icone: '🛢️',
+    icone: 'bi bi-droplet',
   },
   {
     nome: 'Peças para Motor',
     descricao:
       'Velas, filtros, correias e muito mais para manter o motor do seu veículo funcionando bem.',
-    icone: '⚙️',
+    icone: 'bi bi-gear',
   },
 ]
 
@@ -36,7 +36,7 @@ function ProdutosSection() {
             <div className="col-12 col-md-6 col-lg-3" key={categoria.nome}>
               <article className="card card-produto-bs h-100">
                 <div className="card-produto-img-placeholder">
-                  {categoria.icone}
+                    <i className={categoria.icone}></i>
                 </div>
 
                 <div className="card-body d-flex flex-column">
@@ -47,7 +47,7 @@ function ProdutosSection() {
                   </p>
 
                   <button
-                    className="btn-amarelo mt-auto"
+                    className="btn-estoque mt-auto"
                     disabled
                   >
                     Fora de Estoque

@@ -189,7 +189,7 @@ function ContatoSection() {
               target="_blank"
               rel="noreferrer"
             >
-              📷 Instagram — @wamoraes
+              <i className="bi bi-instagram"></i> Instagram — @wamoraes
             </a>
 
             <a
@@ -198,7 +198,7 @@ function ContatoSection() {
               target="_blank"
               rel="noreferrer"
             >
-              📘 Facebook — W.A Moraes Peças
+              <i className="bi bi-facebook"></i> Facebook — W.A Moraes Peças
             </a>
 
             <a
@@ -207,7 +207,7 @@ function ContatoSection() {
               target="_blank"
               rel="noreferrer"
             >
-              💬 WhatsApp — (21) 2756-6714
+             <i className="bi bi-whatsapp"></i> WhatsApp — (21) 2756-6714
             </a>
           </div>
         </div>

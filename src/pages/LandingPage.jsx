@@ -7,14 +7,17 @@ import Footer from '../components/Footer'
 
 function LandingPage() {
   return (
-    <main id="inicio">
-      <Hero />
-      <Apresentacao />
-      <Destaques />
-      <ProdutosSection />
-      <ContatoSection />
+    <>
+      <main id="inicio">
+        <Hero />
+        <Apresentacao />
+        <Destaques />
+        <ProdutosSection />
+        <ContatoSection />
+      </main>
+
       <Footer />
-    </main>
+    </>
   )
 }
 

@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <>
+    <div className="cabecalho-fixo">
       <header>
         <div className="header-topo">
           <a href="#inicio" className="logo">
@@ -20,18 +20,12 @@ function Navbar() {
 
       <nav>
         <ul>
-          <li>
-            <a href="#inicio">Início</a>
-          </li>
-          <li>
-            <a href="#produtos">Produtos</a>
-          </li>
-          <li>
-            <a href="#contato">Contato</a>
-          </li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
-    </>
+    </div>
   )
 }
 
