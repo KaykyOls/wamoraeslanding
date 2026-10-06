@@ -30,24 +30,33 @@ function ProdutosSection() {
     <section id="produtos">
       <h2 className="titulo-secao">Nossos Produtos</h2>
 
-      <div className="produtos-grid">
-        {categorias.map((categoria) => (
-          <article className="card-produto" key={categoria.nome}>
-            <div className="card-produto-img-placeholder">
-              {categoria.icone}
+      <div className="container">
+        <div className="row g-4">
+          {categorias.map((categoria) => (
+            <div className="col-12 col-md-6 col-lg-3" key={categoria.nome}>
+              <article className="card card-produto-bs h-100">
+                <div className="card-produto-img-placeholder">
+                  {categoria.icone}
+                </div>
+
+                <div className="card-body d-flex flex-column">
+                  <h3 className="card-title">{categoria.nome}</h3>
+
+                  <p className="card-text">
+                    {categoria.descricao}
+                  </p>
+
+                  <button
+                    className="btn-amarelo mt-auto"
+                    disabled
+                  >
+                    Fora de Estoque
+                  </button>
+                </div>
+              </article>
             </div>
-
-            <div className="card-produto-info">
-              <h3>{categoria.nome}</h3>
-
-              <p>{categoria.descricao}</p>
-
-              <button className="btn-amarelo" disabled>
-                Fora de Estoque
-              </button>
-            </div>
-          </article>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )
