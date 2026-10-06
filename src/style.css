@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #111111;
-    padding: 15px 20px;
+    padding: 18px 20px;
     width: 100%;
 }
 
@@ -36,7 +36,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
     text-decoration: none;
 }
 
@@ -50,14 +50,14 @@ header {
 .logo-texto span {
     display: block;
     color: #FFD400;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
     line-height: 1.2;
 }
 
 .logo-texto small {
     color: #cccccc;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 /* NAVEGAÇÃO */
