@@ -1,63 +1,67 @@
-# W.A Moraes Peças e Acessórios Automotivos
+# W.A Moraes Peças e Acessórios Automotivos | Landing Page em React
 
-Landing Page desenvolvida em React com Vite como parte do trabalho individual da Parte 2 de Front-End.
+Parte 2 (individual) do trabalho da disciplina Front-End.
 
 ## Autor
 
 Kayky de Oliveira Lopes da Silva
 
-## Sobre o projeto
+## Origem
 
-O projeto consiste na reconstrução do site da W.A Moraes Peças e Acessórios Automotivos utilizando React.
+- Repositório do grupo (Parte 1): https://github.com/KaykyOls/wamoraess.github.io
+- Páginas que fiz na Parte 1: index.html, produtos.html, contato.html
+- Autor(a) do index.html original: Kayky de Oliveira Lopes da Silva
 
-A proposta da Parte 2 foi transformar o conteúdo do `index.html` da Parte 1 e da página desenvolvida pelo aluno em uma única Landing Page, organizada em seções e com navegação por âncoras.
+## Site publicado
 
-O projeto mantém a identidade visual original, utilizando as mesmas cores e o framework CSS utilizado na Parte 1.
+https://wamoraeskayky.netlify.app
 
-## Tecnologias utilizadas
+## Como executar
 
-- React
-- Vite
-- JavaScript
-- HTML5
-- CSS3
-- Bootstrap
-- Bootstrap Icons
+npm install
 
-## Funcionalidades
+npm run dev
 
-- Landing Page com navegação por seções
-- Menu com âncoras
-- Seção de apresentação da empresa
-- Seção de diferenciais
-- Seção de produtos
-- Formulário de contato com validação
-- Máscara para telefone
-- Links para redes sociais
-- Layout responsivo para diferentes tamanhos de tela
+## Seções da Landing Page
 
-## Estrutura do projeto
+| Seção | Origem |
+|---|---|
+| Hero | index.html |
+| Apresentação | index.html |
+| Diferenciais | contato.html |
+| Produtos | produtos.html |
+| Chamada final | contato.html |
+| Rodapé | index.html |# W.A Moraes Peças e Acessórios Automotivos | Landing Page em React
 
-```text
-src/
-├── components/
-│   ├── Apresentacao.jsx
-│   ├── ContatoSection.jsx
-│   ├── Destaques.jsx
-│   ├── Footer.jsx
-│   ├── Hero.jsx
-│   ├── Navbar.jsx
-│   └── ProdutosSection.jsx
-│
-├── pages/
-│   └── LandingPage.jsx
-│
-├── App.jsx
-├── main.jsx
-├── index.css
-└── style.css
+Parte 2 (individual) do trabalho da disciplina Front-End.
 
-public/
-└── imagens/
+## Autor
 
-referencia-html/
+Kayky de Oliveira Lopes da Silva
+
+## Origem
+
+- Repositório do grupo (Parte 1): https://github.com/KaykyOls/wamoraess.github.io
+- Páginas que fiz na Parte 1: index.html, produtos.html, contato.html
+- Autor(a) do index.html original: Kayky de Oliveira Lopes da Silva
+
+## Site publicado
+
+https://wamoraeskayky.netlify.app
+
+## Como executar
+
+npm install
+
+npm run dev
+
+## Seções da Landing Page
+
+| Seção | Origem |
+|---|---|
+| Hero | index.html |
+| Apresentação | index.html |
+| Diferenciais | contato.html |
+| Produtos | produtos.html |
+| Chamada final | contato.html |
+| Rodapé | index.html |
