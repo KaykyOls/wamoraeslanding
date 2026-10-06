@@ -1,4 +1,88 @@
+import { useState } from 'react'
+
 function ContatoSection() {
+  const [form, setForm] = useState({
+    nome: '',
+    email: '',
+    telefone: '',
+    mensagem: '',
+  })
+
+  function formatarTelefone(valor) {
+    let telefone = valor.replace(/\D/g, '')
+    telefone = telefone.substring(0, 11)
+
+    if (telefone.length > 10) {
+      return telefone.replace(
+        /^(\d{2})(\d{5})(\d{4}).*/,
+        '($1) $2-$3'
+      )
+    }
+
+    return telefone.replace(
+      /^(\d{2})(\d{4})(\d{0,4}).*/,
+      '($1) $2-$3'
+    )
+  }
+
+  function handleChange(event) {
+    const { name, value } = event.target
+
+    setForm({
+      ...form,
+      [name]: name === 'telefone' ? formatarTelefone(value) : value,
+    })
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault()
+
+    const nome = form.nome.trim()
+    const email = form.email.trim()
+    const telefone = form.telefone.trim()
+    const mensagem = form.mensagem.trim()
+
+    if (nome === '') {
+      alert('Por favor, preencha o campo Nome.')
+      return
+    }
+
+    if (nome.length < 3) {
+      alert('O nome deve ter pelo menos 3 letras.')
+      return
+    }
+
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+    if (!emailValido.test(email)) {
+      alert('Por favor, informe um e-mail válido (exemplo: nome@email.com).')
+      return
+    }
+
+    const telefoneValido = /^\(\d{2}\)\s?\d{4,5}-\d{4}$/
+
+    if (!telefoneValido.test(telefone)) {
+      alert('Telefone inválido. Exemplo: (21) 99999-9999')
+      return
+    }
+
+    if (mensagem.length < 10) {
+      alert('A mensagem deve ter pelo menos 10 caracteres.')
+      return
+    }
+
+    alert(
+      'Solicitação enviada com sucesso! Entraremos em contato em breve.'
+    )
+
+    setForm({
+      nome: '',
+      email: '',
+      telefone: '',
+      mensagem: '',
+    })
+  }
+
   return (
     <section id="contato">
       <h2 className="titulo-secao">Fale Conosco</h2>
@@ -7,7 +91,7 @@ function ContatoSection() {
         <div className="formulario-contato">
           <h2>Envie uma mensagem</h2>
 
-          <form id="formContato">
+          <form id="formContato" onSubmit={handleSubmit}>
             <div className="grupo-campo">
               <label htmlFor="nome">Nome completo</label>
               <input
@@ -15,6 +99,8 @@ function ContatoSection() {
                 id="nome"
                 name="nome"
                 placeholder="Digite seu nome"
+                value={form.nome}
+                onChange={handleChange}
               />
             </div>
 
@@ -25,6 +111,8 @@ function ContatoSection() {
                 id="email"
                 name="email"
                 placeholder="Digite seu e-mail"
+                value={form.email}
+                onChange={handleChange}
               />
             </div>
 
@@ -35,6 +123,8 @@ function ContatoSection() {
                 id="telefone"
                 name="telefone"
                 placeholder="(XX) 9 XXXX-XXXX"
+                value={form.telefone}
+                onChange={handleChange}
               />
             </div>
 
@@ -44,6 +134,8 @@ function ContatoSection() {
                 id="mensagem"
                 name="mensagem"
                 placeholder="Escreva sua mensagem aqui..."
+                value={form.mensagem}
+                onChange={handleChange}
               ></textarea>
             </div>
 
