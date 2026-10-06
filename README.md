@@ -4,7 +4,7 @@ Landing Page desenvolvida em React com Vite como parte do trabalho individual da
 
 ## Autor
 
-**Kayky de Oliveira Lopes da Silva**
+Kayky de Oliveira Lopes da Silva
 
 ## Sobre o projeto
 
